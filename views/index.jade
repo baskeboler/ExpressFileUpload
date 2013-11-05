@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form(name='uploadForm', action='/upload', method='post', enctype=
+  	'multipart/form-data')
+    input(type='file', name='imageUploader')
+    label Choose a file to upload
+    br
+    br
+    input(type='submit') 
